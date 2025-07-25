@@ -82,7 +82,7 @@ int main(void)
     char dae[20], *san;
     int digit, dec, si;
 
-    itoa(12005, dae, 10); // 정수형 데이터 -> 문자열
+    itoa(12005, dae, 10); // 정수형 데이터 -> 문자열 // itoa, Itoa, ecvt는 비표준 함수 => std::to_string()로 사용
     cout << dae << "\n";
 
     ltoa(98765, dae, 10); // 장정도형 데이터 -> 문자열
